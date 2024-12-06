@@ -13,7 +13,7 @@
 
 
 
-<title>Hello World | Zhihui&#39; Log</title>
+<title>Statistics using R | Zhihui&#39; Log</title>
 
 
 
@@ -193,7 +193,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Hello World</h1>
+            <h1 class="post-title">Statistics using R</h1>
             
                 <div class="post-meta">
                     
@@ -202,7 +202,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">December 4, 2024&nbsp;&nbsp;21:22:08</a>
+                        Date: <a href="#">December 7, 2024&nbsp;&nbsp;0:24:17</a>
                         </span>
                     
                     
@@ -211,20 +211,25 @@
         </header>
 
         <div class="post-content">
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+            <h3 id="Statistics-using-R-an-integrative-approach"><a href="#Statistics-using-R-an-integrative-approach" class="headerlink" title="Statistics using R: an integrative approach"></a>Statistics using R: an integrative approach</h3><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This book is written by a psychology professor from NYU, and she used a dataset from NYU students. She wrote this book to help beginners learn R in an easy and approachable way. The reason I chose this book is, first, it’s very easy to understand and practice, and second, the author uses different statistical tools (STATA and SPSS) to process the same dataset, which means you can learn three tools simultaneously. I read this book more than two years ago, but since my work doesn’t require frequent use of these skills, I have forgotten most of them. Now, I want to revisit the book, reinforce my knowledge, and build a more solid understanding of its structure. Below, I will list the contents and some simple codes in a clear and understandable way.</p>
+<h2 id="chapter-1"><a href="#chapter-1" class="headerlink" title="chapter 1"></a>chapter 1</h2><p>To <em>install</em> the <strong>sur</strong> package written for this textbook, type the following command into our R console and press Enter:</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;sur&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>To <em>load</em> the <strong>sur</strong> package, type the following command each time you begin an R session on  computer:</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">library<span class="punctuation">(</span>sur<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>To obtain a listing of the functions in the <strong>sur package</strong>, which include, for example, functionsto create <strong>percentage tables, calculate the mode, and compute Levene’stest forthe equality of variances</strong>, type the following command:</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">help<span class="punctuation">(</span>package <span class="operator">=</span> <span class="string">&quot;sur&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>To access the tutorial on <em>managing data frames</em>, open <strong>RStudio</strong>, and type:</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">library<span class="punctuation">(</span>sur<span class="punctuation">)</span> </span><br><span class="line">learnr<span class="operator">::</span>run_tutorial<span class="punctuation">(</span><span class="string">&quot;R_Basics”, package = “sur”)</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><strong>NELS</strong> is a dataset from the National Educational Longitudinal Study begun in 1988, Type <strong>str(NELS)</strong> to view the structure (denoted str in R) of the dataset.</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str<span class="punctuation">(</span>NELS<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
+
+
+<h2 id="chapter-2"><a href="#chapter-2" class="headerlink" title="chapter 2"></a>chapter 2</h2><h2 id="chapter-3"><a href="#chapter-3" class="headerlink" title="chapter 3"></a>chapter 3</h2>
         </div>
 
         
@@ -233,6 +238,10 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
+                    
+                        <a href="/tags/R/"># R</a>
+                    
+                        
                 </span>
             </div>
             <div>
@@ -243,8 +252,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2024/12/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">My First Blog</a>
             
+            <a class="next" rel="next" href="/2024/12/05/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">My First Blog</a>
             
         </section>
 
