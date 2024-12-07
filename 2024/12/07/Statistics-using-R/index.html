@@ -212,19 +212,19 @@
 
         <div class="post-content">
             <h3 id="Statistics-using-R-an-integrative-approach"><a href="#Statistics-using-R-an-integrative-approach" class="headerlink" title="Statistics using R: an integrative approach"></a>Statistics using R: an integrative approach</h3><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This book is written by a psychology professor from NYU, and she used a dataset from NYU students. She wrote this book to help beginners learn R in an easy and approachable way. The reason I chose this book is, first, it’s very easy to understand and practice, and second, the author uses different statistical tools (STATA and SPSS) to process the same dataset, which means you can learn three tools simultaneously. I read this book more than two years ago, but since my work doesn’t require frequent use of these skills, I have forgotten most of them. Now, I want to revisit the book, reinforce my knowledge, and build a more solid understanding of its structure. Below, I will list the contents and some simple codes in a clear and understandable way.</p>
-<h2 id="chapter-1"><a href="#chapter-1" class="headerlink" title="chapter 1"></a>chapter 1</h2><p>To <em>install</em> the <strong>sur</strong> package written for this textbook, type the following command into our R console and press Enter:</p>
+<h2 id="chapter-1-basic-setting"><a href="#chapter-1-basic-setting" class="headerlink" title="chapter 1: basic setting"></a>chapter 1: basic setting</h2><p>To <em>install</em> the <strong>sur</strong> package written for this textbook, type the following command into our R console and press Enter:</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;sur&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
 <p>To <em>load</em> the <strong>sur</strong> package, type the following command each time you begin an R session on  computer:</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">library<span class="punctuation">(</span>sur<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
-<p>To obtain a listing of the functions in the <strong>sur package</strong>, which include, for example, functionsto create <strong>percentage tables, calculate the mode, and compute Levene’stest forthe equality of variances</strong>, type the following command:</p>
+<p>To obtain a listing of the functions in the <strong>sur package</strong>, which include, for example, functions to create <strong>percentage tables, calculate the mode, and compute Levene’stest forthe equality of variances</strong>, type the following command:</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">help<span class="punctuation">(</span>package <span class="operator">=</span> <span class="string">&quot;sur&quot;</span><span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
 <p>To access the tutorial on <em>managing data frames</em>, open <strong>RStudio</strong>, and type:</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">library<span class="punctuation">(</span>sur<span class="punctuation">)</span> </span><br><span class="line">learnr<span class="operator">::</span>run_tutorial<span class="punctuation">(</span><span class="string">&quot;R_Basics”, package = “sur”)</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>NELS</strong> is a dataset from the National Educational Longitudinal Study begun in 1988, Type <strong>str(NELS)</strong> to view the structure (denoted str in R) of the dataset.</p>
+<p><strong>NELS</strong> is a dataset from the National Educational Longitudinal Study begun in 1988, Type <strong>str(NELS)</strong> to view the structure (denoted <strong>str</strong> in R) of the dataset.</p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str<span class="punctuation">(</span>NELS<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
 
 
