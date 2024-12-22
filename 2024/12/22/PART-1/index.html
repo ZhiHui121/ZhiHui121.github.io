@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en&amp;Chinese">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Zhi Hui">
+
+
+
+
+
+<title>PART 1 | Zhihui&#39; Log</title>
+
+
+
+    <link rel="icon" href="/zhihuisfox.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">ZhiHui&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/categories">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">ZhiHui&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/categories">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">PART 1</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Zhi Hui</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">December 22, 2024&nbsp;&nbsp;22:40:28</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="par1-总览"><a href="#par1-总览" class="headerlink" title="par1 总览"></a>par1 总览</h1><ol>
+<li>Do you have any hobbies?</li>
+<li>Do you like swimming?</li>
+<li>Is there an advertisement that made an impression on you when you were a child?</li>
+<li>Do you often feel bored?</li>
+<li>How important are friends to you?</li>
+<li>Do you often read books? When?</li>
+<li>Do you like the morning or evening?</li>
+<li>Where is your favorite place to sit?</li>
+<li>In what conditions would you use a computer?</li>
+<li>Have you ever seen old buildings in the city?</li>
+<li>Do you collect things?</li>
+<li>Do you have a talent or something you are good at?</li>
+<li>Do you wear a watch?</li>
+<li>Did you enjoy traveling by car when you were a kid?</li>
+<li>What will you do if you find something lost by others?</li>
+<li>What kind of websites do you often visit?</li>
+<li>What do people usually buy at the street market?</li>
+<li>What was your first mobile phone?</li>
+<li>How do you plan your time in a day?</li>
+<li>Do you like watching sports programs on TV?</li>
+<li>Do you like drawing?</li>
+<li>Do you like taking photos?</li>
+<li>Do you often send emails?</li>
+<li>Can you remember the dreams you had?</li>
+<li>Do you like looking at yourself in the mirror? How often?</li>
+<li>Do you like making friends?</li>
+<li>Do you prefer to study at home or in a library?</li>
+<li>What is the view like around the place where you live?</li>
+<li>Do you enjoy watching interesting and funny movies?</li>
+<li>Do you like teamwork?</li>
+<li>Is fishing popular in your country?</li>
+<li>Do you like perfume?</li>
+<li>Are the roads and streets in the area where you live busy?</li>
+<li>Do you often carry coins with you?</li>
+<li>Do you have a favorite teacher?</li>
+<li>Did you have a bike when you were young?</li>
+<li>What subject do you think is the most challenging at school?</li>
+<li>What did you enjoy doing as a child?</li>
+<li>Are you a person who likes to stay at home?</li>
+<li>Where is your school?</li>
+<li>Have you ever tried any exciting activities?</li>
+<li>Which do you prefer, e-books or paper books?</li>
+<li>Are you interested in news?</li>
+<li>When did you start using the internet?</li>
+<li>What do you usually eat for breakfast?</li>
+<li>Have you ever learned to play a musical instrument?</li>
+<li>What films do you like?</li>
+<li>What languages can you speak?</li>
+<li>What city do you live in?</li>
+<li>Is there anything that has made you feel happy lately?</li>
+<li>Do you wear T-shirts?</li>
+<li>Do you like weekends?</li>
+<li>What sports do you like?</li>
+<li>What is your daily study routine?</li>
+<li>Do you like science?</li>
+<li>Where did you go for your last holiday?</li>
+<li>What would you do to relax?</li>
+<li>Are you good at math?</li>
+<li>Do you usually use a pen or a pencil?</li>
+<li>Do you have anything to share with others recently?</li>
+<li>Do you like to get up early in the morning?</li>
+<li>Do you keep plants at home?</li>
+<li>What subjects are you studying?</li>
+<li>When did you start using social media?</li>
+<li>Who do you live with?</li>
+<li>Have you learned anything about the history of your hometown?</li>
+<li>Are the people in your neighborhood nice and friendly?</li>
+</ol>
+<h1 id="Do-you-have-any-hobbies"><a href="#Do-you-have-any-hobbies" class="headerlink" title="Do you have any hobbies?"></a>Do you have any hobbies?</h1>
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2024/12/14/%E6%9C%80%E8%BF%91%E5%9C%A8%E6%80%9D%E8%80%83%E7%9A%84%E9%97%AE%E9%A2%98/">最近在思考的问题</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Zhi Hui | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
