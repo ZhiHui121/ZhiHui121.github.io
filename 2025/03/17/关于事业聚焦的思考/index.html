@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en&amp;Chinese">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Zhi Hui">
+
+
+
+
+
+<title>关于事业聚焦的思考 | Zhihui&#39; Log</title>
+
+
+
+    <link rel="icon" href="/zhihuisfox.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">ZhiHui&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/categories">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">ZhiHui&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/categories">Categories</a>
+                
+                    <a class="menu-item" href="/tags">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">关于事业聚焦的思考</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Zhi Hui</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">March 17, 2025&nbsp;&nbsp;22:55:30</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>在刚毕业的时候，对于我自己<strong>具体真正要将全部精力放在什么事情上、选择做什么来成就我的事业</strong>这个问题没有过多思考。我当时的想法是我已经选了心理学这个专业了，我已经在这个专业里面花了7年的时间了，我先用它找个工作养活我自己。我喜欢自由，不喜欢被约束被管制的感觉，所以当时对于体制内也兴致缺缺。于是草率又随意地找了个工作。</p>
+<p>那是2021年7月份。疫情正当头。疫苗已经打了两针，随时随地都要做核酸。去哪儿都被限制。</p>
+<p><strong>我当时觉得我什么都会做，什么都可以做</strong>，不会做的也可以现学现卖。</p>
+<p>后面经过思考，我发现选项太多不是好事。这意味着我什么都做不好。我开始探索自己到底适合选择什么。</p>
+<h3 id="第一步，列出所有我能做的事，用三个维度评分（1-10分）："><a href="#第一步，列出所有我能做的事，用三个维度评分（1-10分）：" class="headerlink" title="第一步，列出所有我能做的事，用三个维度评分（1-10分）："></a>第一步，列出所有我能做的事，用三个维度评分（1-10分）：</h3><ul>
+<li><p><strong>能力值</strong>：我当前的技能&#x2F;资源能支撑到什么程度</p>
+</li>
+<li><p><strong>兴趣值</strong>：持续做这件事3年后是否依然兴奋</p>
+</li>
+<li><p><strong>市场值</strong>：该领域头部玩家的收入天花板、需求增长性</p>
+</li>
+<li><p><strong>筛选标准</strong>：删除任何单项低于7分的选项</p>
+</li>
+</ul>
+<p>我必须从我认为我会的技能里面逐步地筛选出真正热爱喜欢能坚持的那个。我不要做通才，全都会&#x3D;全完蛋。</p>
+<p>删掉部分选项以后，在剩下的选项里面，问自己，<strong>如果五年前我选择某个方向，现在能否建立竞争壁垒？</strong></p>
+<h3 id="第二步，用4层漏斗层层筛选"><a href="#第二步，用4层漏斗层层筛选" class="headerlink" title="第二步，用4层漏斗层层筛选"></a>第二步，用4层漏斗层层筛选</h3><ol>
+<li>我的底层逻辑是什么？<ul>
+<li>我的<strong>元能力是什么</strong>？例如数据分析&#x2F;创造表达&#x2F;人际协调…（如马斯克的「第一性原理推演」能力）</li>
+<li><strong>我的能量补给方式</strong>是什么？例如外向者适合高频社交型工作，内向者可能在深度思考领域更高效</li>
+<li><strong>保留与核心特质强关联的选项</strong></li>
+</ul>
+</li>
+</ol>
+<h4 id="2-商业价值层：寻找幂律分布区"><a href="#2-商业价值层：寻找幂律分布区" class="headerlink" title="2. 商业价值层：寻找幂律分布区"></a><strong>2. 商业价值层：寻找幂律分布区</strong></h4><ul>
+<li>用「头部效应」思维筛选：<ul>
+<li>该领域是否符合「赢家通吃」规律（如互联网行业）</li>
+<li>是否存在「长尾红利」（如小众知识付费）</li>
+</ul>
+</li>
+<li>参考「HTTB法则」（High Threshold To Be Bad）：<ul>
+<li>选择那些做不好会明显失败，但做好后有指数增长的领域</li>
+</ul>
+</li>
+</ul>
+<h4 id="3-机会成本层：计算隐性代价"><a href="#3-机会成本层：计算隐性代价" class="headerlink" title="3. 机会成本层：计算隐性代价"></a><strong>3. 机会成本层：计算隐性代价</strong></h4><ul>
+<li>用「沉没成本敏感度」评估：<ul>
+<li>如果三年后发现选错，哪个方向的切换成本最低？</li>
+</ul>
+</li>
+<li>应用「奥卡姆剃刀原则」：<ul>
+<li>当两个选项看似同等价值时，选择资源消耗更少的方向</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-验证层：最小可行性测试"><a href="#4-验证层：最小可行性测试" class="headerlink" title="4. 验证层：最小可行性测试"></a><strong>4. 验证层：最小可行性测试</strong></h4><ul>
+<li><p>对剩余选项进行「100小时实验」：</p>
+<ul>
+<li>用100小时深度接触该领域（如参与项目、访谈从业者）</li>
+<li>记录过程中是否产生「创造性心流」（而不仅是新鲜感）</li>
+</ul>
+</li>
+<li><p>关键指标：实验结束后，你是否自发投入额外时间研究？</p>
+</li>
+</ul>
+<h3 id="第三步：设计「动态聚焦系统」"><a href="#第三步：设计「动态聚焦系统」" class="headerlink" title="第三步：设计「动态聚焦系统」"></a><strong>第三步：设计「动态聚焦系统」</strong></h3><p>真正的聚焦不是一次选择，而是一个持续优化的系统：</p>
+<h4 id="1-构建「T型发展结构」"><a href="#1-构建「T型发展结构」" class="headerlink" title="1. 构建「T型发展结构」"></a><strong>1. 构建「T型发展结构」</strong></h4><ul>
+<li><strong>纵轴（深度）</strong>：选择一个领域做到前20%（如「跨境电商运营」）</li>
+<li><strong>横轴（广度）</strong>：关联领域保持前40%水平（如供应链管理、数据分析）</li>
+<li><strong>连接点</strong>：在交叉领域创造独特价值（如「用数据算法优化跨境物流」）</li>
+</ul>
+<h4 id="2-设置「聚焦-探索」双周期"><a href="#2-设置「聚焦-探索」双周期" class="headerlink" title="2. 设置「聚焦-探索」双周期"></a><strong>2. 设置「聚焦-探索」双周期</strong></h4><ul>
+<li><strong>专注周期</strong>（6-12个月）：投入70%精力深耕核心领域</li>
+<li><strong>探索周期</strong>（每季度1周）：用「黑客学习法」快速扫描关联领域</li>
+<li><strong>注意</strong>：探索期必须产出具体成果（如白皮书&#x2F;原型设计），避免沦为消遣</li>
+</ul>
+<h4 id="3-创建「机会防火墙」"><a href="#3-创建「机会防火墙」" class="headerlink" title="3. 创建「机会防火墙」"></a><strong>3. 创建「机会防火墙」</strong></h4><ul>
+<li><p><strong>制定「不做什么」清单</strong>：明确拒绝与主线无关的机会</p>
+</li>
+<li><p><strong>设置「诱惑储蓄罐」</strong>：把突然出现的新想法记录下来，季度评估时决定是否升级为探索项目</p>
+</li>
+</ul>
+<h3 id="第四步：驾驭「复合收益飞轮」"><a href="#第四步：驾驭「复合收益飞轮」" class="headerlink" title="第四步：驾驭「复合收益飞轮」"></a><strong>第四步：驾驭「复合收益飞轮」</strong></h3><p>当完成聚焦后，用杠杆放大专注的回报：</p>
+<ol>
+<li><p><strong>知识复利化</strong></p>
+<ul>
+<li>将专业经验转化为可复用的方法论（如创作课程&#x2F;自动化工具）</li>
+</ul>
+</li>
+<li><p><strong>网络节点化</strong></p>
+<ul>
+<li>在细分领域成为资源枢纽（如举办行业闭门会）</li>
+</ul>
+</li>
+<li><p><strong>IP资产化</strong></p>
+<ul>
+<li>通过内容输出建立个人品牌溢价</li>
+</ul>
+</li>
+</ol>
+<h3 id="关键认知升级"><a href="#关键认知升级" class="headerlink" title="关键认知升级"></a><strong>关键认知升级</strong></h3><ul>
+<li><strong>「聚焦」的本质是战略放弃</strong>：正如彼得·蒂尔在《从0到1》中指出，所有成功企业都源自找到别人忽视的垄断性机会</li>
+<li><strong>「能力迁移」不等于「方向发散」</strong>：马斯克同时涉足航天、汽车、脑机接口，但底层都是「第一性原理+物理思维」的延伸</li>
+<li><strong>真正的限制不是选择多少，而是能否在任一选择中构建「不可逆优势」</strong></li>
+</ul>
+<h3 id="行动清单"><a href="#行动清单" class="headerlink" title="行动清单"></a><strong>行动清单</strong></h3><ol>
+<li>▢ 完成「能力-兴趣-市场」三维筛选</li>
+<li>▢ 选择三个方向进行「100小时实验」</li>
+<li>▢ 设计个人「T型发展结构」图谱</li>
+<li>▢ 在日历中标注首个「专注周期」起止日</li>
+</ol>
+<p>职业选择如同创业，需要先用精益验证找到PMF（Product-Market Fit），再All in资源规模化。你现在要做的不是「找到完美答案」，而是「启动验证流程」。每一次小步快跑的实验，都在降低未来的决策熵增。</p>
+
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2024/12/22/PART-1/">PART 1</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Zhi Hui | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
